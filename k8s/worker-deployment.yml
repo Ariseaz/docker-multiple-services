@@ -9,11 +9,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vote
+      app: worker
   template:
     metadata:
       labels:
-        app: vote
+        app: worker
     spec:
       containers:
       - image: adenijiazeez/multi-worker
