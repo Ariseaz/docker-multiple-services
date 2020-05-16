@@ -18,6 +18,11 @@ spec:
       containers:
       - image: redis:alpine
         name: redis
+        env:
+        - name: REDIS_HOST
+          value: redis
+        - name: REDIS_PORT
+          value: 6379
         ports:
         - containerPort: 6379
           name: redis
