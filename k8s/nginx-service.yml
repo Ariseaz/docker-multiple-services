@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nginx
+  name: nginx
+  namespace: app
+spec:
+  type: Loadbalancer
+  ports:
+  - name: "nginx-service"
+    port: 3050
+    targetPort: 80
+  selector:
+    app: nginx
+  

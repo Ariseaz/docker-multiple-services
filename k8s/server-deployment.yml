@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: server
+  name: server
+  namespace: app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: server
+  template:
+    metadata:
+      labels:
+        app: server
+    spec:
+      containers:
+      - image: adenijiazeez/multi_server
+        name: server
+        env:
+        - name: PGUSER
+          value: postgres
+        - name: PGPASSWORD
+          value: postgres_password
+        - name: REDIS_HOST
+          value: redis
+        - name: REDIS_PORT
+          value: 6379
+        - name: PGHOST
+          value: postgres
+        - name: PGDATABASE
+          value: postgres
+        - name: PGPORT
+          value: 5432
