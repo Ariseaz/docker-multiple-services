@@ -19,10 +19,6 @@ spec:
       - image: adenijiazeez/multi_server
         name: server
         env:
-        - name: PGUSER
-          value: postgres
-        - name: PGPASSWORD
-          value: postgres_password
         - name: REDIS_HOST
           value: redis
         - name: REDIS_PORT

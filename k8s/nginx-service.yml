@@ -3,9 +3,10 @@ kind: Service
 metadata:
   labels:
     app: nginx
+    name: multi-docker-app
   name: nginx
 spec:
-  type: Loadbalancer
+  type: LoadBalancer
   ports:
   - name: "nginx-service"
     port: 3050
