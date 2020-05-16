@@ -21,12 +21,6 @@ spec:
         env:
         - name: PGUSER
           value: postgres
-        - name: PGPASSWORD
-          value: "postgres_password"
-        - name: PGPORT
-          value: 5432
-        - name: PGHOST
-          value: postgres
         - name: PGDATABASE
           value: postgres
         - name: REDIS_HOST
