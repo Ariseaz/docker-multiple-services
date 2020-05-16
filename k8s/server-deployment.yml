@@ -22,7 +22,7 @@ spec:
         - name: PGUSER
           value: postgres
         - name: PGPASSWORD
-          value: postgres_password
+          value: "postgres_password"
         - name: PGPORT
           value: 5432
         - name: PGHOST
