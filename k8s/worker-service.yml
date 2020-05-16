@@ -3,11 +3,12 @@ kind: Service
 metadata:
   labels:
     app: worker
+    name: multi-docker-app
   name: worker
 spec:
   type: NodePort
   ports:
-  - name: "worker-service"
+  - name: worker-service
   selector:
     app: worker
   

@@ -3,6 +3,7 @@ kind: Service
 metadata:
   labels:
     app: db
+    name: multi-docker-app
   name: db
 spec:
   type: ClusterIP

@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: worker
+    name: multi-docker-app
   name: worker
 spec:
   replicas: 1

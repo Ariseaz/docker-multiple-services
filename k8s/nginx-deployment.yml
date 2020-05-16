@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: nginx
+    name: multi-docker-app
   name: nginx
 spec:
   replicas: 1
