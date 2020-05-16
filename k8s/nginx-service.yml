@@ -6,7 +6,7 @@ metadata:
     name: multi-docker-app
   name: nginx
 spec:
-  type: loadBalancer
+  type: LoadBalancer
   ports:
   - name: "nginx-service"
     port: 3050
