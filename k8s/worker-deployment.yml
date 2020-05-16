@@ -18,3 +18,8 @@ spec:
       containers:
       - image: adenijiazeez/multi-worker
         name: worker
+        env:
+        - name: REDIS_HOST
+          value: redis
+        - name: REDIS_PORT
+          value: 6379
