@@ -17,3 +17,4 @@ spec:
     spec:
       containers:
       - image: adenijiazeez/multi-worker
+        name: worker
