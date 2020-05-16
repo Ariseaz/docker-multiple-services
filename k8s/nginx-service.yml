@@ -6,11 +6,12 @@ metadata:
     name: multi-docker-app
   name: nginx
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - name: "nginx-service"
     port: 3050
     targetPort: 80
+    nodePort: 3050
   selector:
     app: nginx
   
