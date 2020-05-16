@@ -21,14 +21,8 @@ spec:
         env:
         - name: PGUSER
           value: postgres
-        - name: PGPASSWORD
-          value: postgres_password
-        - name: PGHOST
-          value: postgres
         - name: PGDATABASE
           value: postgres
-        - name: PGPORT
-          value: 5432
         ports:
         - containerPort: 5432
           name: postgres
